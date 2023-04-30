@@ -1,7 +1,7 @@
 {
   "name": "projeto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kit de ferramentas de automação de tarefas baseada em JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,8 @@
   "author": "Marcelo Cavalcante",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.15.4",
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
@@ -33,5 +33,13 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.0",
     "ejs": "^3.1.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsondala/gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wilsondala/gulp/issues"
+  },
+  "homepage": "https://github.com/wilsondala/gulp#readme"
 }
