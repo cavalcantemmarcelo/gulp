@@ -93,13 +93,8 @@ gulp.task('serve', function(){
 
 })
 
-function end(cb){
-    console.log("tarefas concluídas")
-    return cb()
-}
-
 // series x parallel
-const process = parallel( tarefasHTML, tarefasJS, tarefasCSS, end)
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
