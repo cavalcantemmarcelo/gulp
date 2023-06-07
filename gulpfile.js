@@ -93,6 +93,11 @@ function tarefasHTML(callback){
 
 }
 
+function end(cb){
+    console.log("tarefas concluídas")
+    return cb()
+}
+
 gulp.task('serve', function(){
 
     browserSync.init({
@@ -106,7 +111,7 @@ gulp.task('serve', function(){
 })
 
 // series x parallel
-const process = series( tarefasHTML, tarefasJS, tarefasCSS, end)
+const process = parallel( tarefasHTML, tarefasJS, tarefasCSS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
